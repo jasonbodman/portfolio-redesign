@@ -46,9 +46,7 @@
 }
 
 header {
-	background-color: #565f8a;
-	position: fixed;
-	margin-top: 0px;
+	background-color: #2a60a0;
 	padding: 10px;
 	z-index: 1;
 	display: inline-flex;
@@ -75,14 +73,37 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	padding-top: 125px;
-	min-height: 600px;
-	max-height: 600px;
+	height: 100vh;
 }
 
 .services {
 	background-color: #ccc;
 	min-height: 1000px;
 	padding-top: 50px;
+}
+
+.service-list {
+	display: inline-flex;
+	margin: 0 auto;
+}
+
+.service-item {
+	width: 33%;
+	margin: 10px;
+}
+
+.service-image-bg {
+	background-color: #fff;
+	border-radius: 50%;
+	width: 50%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.service-description {
+	text-align: center;
+	width: 100%;
+	margin: 25px 0px;
 }
 
 
@@ -109,4 +130,10 @@ a.nav-link {
 	font-size: 1.25rem;
 	text-align: right;
 	padding: 0px 15px;
+}
+
+img.service-image {
+	width: 50%;
+	height: auto;
+	margin: 25%;
 }
