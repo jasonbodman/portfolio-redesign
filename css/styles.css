@@ -7,11 +7,6 @@
 	box-sizing: border-box;
 }
 
-body {
-	display: flex;
-}
-
-
 /* STYLES */
 .robot {
 	font-family: Roboto, sans-serif;
@@ -68,7 +63,7 @@ header {
 	width: 100%;
 }
 
-#main {
+section#main {
 	background-image: url("../img/main2.jpg");
 	position: relative;
 	background-attachment: fixed;
@@ -90,7 +85,7 @@ header {
 	box-shadow: 0px 0px 30px -10px black;
 }
 
-#services {
+section#services {
 	background-color: #ccc;
 	padding: 50px;
 }
@@ -113,7 +108,7 @@ header {
 	margin: 0 auto;
 }
 
-#portfolio {
+section#portfolio {
 	background-color: #8e4444;
 	padding: 50px;
 	margin: 0 auto;
@@ -147,6 +142,37 @@ header {
 
 .project-description {
 	margin-top: 25px;
+}
+
+section#contact {
+	background-color: #ccc;
+	padding: 50px;
+}
+
+footer {
+	background-color: #8e4444;
+	color: #fff;
+}
+
+.footer-top {
+	display: inline-flex;
+}
+
+.footer-left {
+	width: 25%;
+	padding: 25px;
+}
+
+.footer-right {
+	width: 75%;
+	text-align: right;
+	padding: 25px;
+}
+
+.footer-bottom {
+	height: 50px;
+	color: #fff;
+	padding: 0px
 }
 
 /* ELEMENT STYLES */
@@ -196,4 +222,8 @@ img.thumbnail {
 
 .project-info h2 {
 	margin-bottom: 0px;
+}
+
+.footer-left img {
+	width: 35%;
 }
