@@ -39,22 +39,15 @@ header {
 	background-color: #2a60a0;
 	z-index: 1;
 	display: inline-flex;
-	width: 300px;
-	height: 75px;
+	width: 150px;
+	height: 50px;
 	position: fixed;
-	margin: 20px 20px 20px 70%;
+	margin: 20px 20px 20px 80%;
 	border-radius: 25px;
 }
 
-.nav-menu {
-	width: 60%;
-	display: inline-flex;
-	border-right: 2px solid white;
-	padding: 5px 0px;
-}
-
 .nav-contact {
-	width: 40%;
+	width: 100%;
 	display: inline-flex;
 	padding: 5px 0px;
 }
@@ -93,6 +86,7 @@ section#services {
 .service-list {
 	display: inline-flex;
 	margin: 0 auto;
+	padding: 50px;
 }
 
 .service-item {
@@ -106,6 +100,10 @@ section#services {
 	width: 50%;
 	height: auto;
 	margin: 0 auto;
+}
+
+.service-description {
+	padding-top: 25px;
 }
 
 section#portfolio {
@@ -147,6 +145,22 @@ section#portfolio {
 section#contact {
 	background-color: #ccc;
 	padding: 50px;
+}
+
+.contactform {
+	padding-top: 25px;
+}
+
+.form {
+
+}
+
+input {
+
+}
+
+textarea	{
+	
 }
 
 footer {
@@ -195,9 +209,9 @@ h3 {
 	font-size: 1.5rem;
 }
 
-img.nav-logo {
-	width: 65px;
-	height: 65px;
+p.subtitle {
+	font-size: 1.4rem;
+	font-weight: lighter;
 }
 
 a.nav-link {
@@ -206,7 +220,7 @@ a.nav-link {
 	font-weight: bold;
 	font-size: 1.25rem;
 	text-align: center;
-	margin-top: 20px;
+	margin-top: 10px;
 }
 
 img.service-image {
