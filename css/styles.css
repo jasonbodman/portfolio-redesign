@@ -7,6 +7,7 @@
 	box-sizing: border-box;
 }
 
+
 /* STYLES */
 .robot {
 	font-family: Roboto, sans-serif;
@@ -151,10 +152,6 @@ section#contact {
 	padding-top: 25px;
 }
 
-.form {
-
-}
-
 .input-block {
 	display: flex;
 }
@@ -166,38 +163,6 @@ section#contact {
 
 .input-item-right {
 	display: block;
-}
-
-input {
-	width: 100%;
-	background-color: #fff;
-	color: #2a60a0;
-	padding: 10px 5px;
-	margin: 10px 0px;
-	font-size: 1rem;
-	border: 2px solid #8e4444;
-}
-
-textarea	{
-	width: 100%;
-	background-color: #fff;
-	color: #2a60a0;
-	padding: 10px 5px;
-	margin: 10px 0px;
-	font-size: 1rem;
-	border: 2px solid #8e4444;
-}
-
-input.submit {
-	width: 100%;
-	background-color: #2a60a0;
-	color: #fff;
-	padding: 10px 5px;
-	margin: 10px 0px;
-	font-size: 1.2rem;
-	border: 2px solid #fff;
-	text-transform: uppercase;
-	font-weight: bold;
 }
 
 footer {
@@ -261,6 +226,17 @@ a.nav-link {
 	margin-top: 10px;
 }
 
+.title button {
+	width: 250px;
+	background-color: #fff;
+	color: #8e4444;
+	font-size: 1.25rem;
+	text-align: center;
+	margin-top: 10px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 30px -10px black;
+}
+
 img.service-image {
 	width: 50%;
 	height: auto;
@@ -272,6 +248,38 @@ img.thumbnail {
 
 .project-info h2 {
 	margin-bottom: 0px;
+}
+
+input {
+	width: 100%;
+	background-color: #fff;
+	color: #2a60a0;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1rem;
+	border: 2px solid #8e4444;
+}
+
+textarea	{
+	width: 100%;
+	background-color: #fff;
+	color: #2a60a0;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1rem;
+	border: 2px solid #8e4444;
+}
+
+input.submit {
+	width: 100%;
+	background-color: #2a60a0;
+	color: #fff;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1.2rem;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 .footer-left img {
