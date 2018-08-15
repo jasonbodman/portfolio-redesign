@@ -21,15 +21,11 @@
 }
 
 .left {
-  padding-left: 18px;
-  padding-right: 25%;
-  margin-right: 15%;
+  text-align: left;
 }
 
 .right {
-  padding-right: 18px;
-  padding-left: 25%;
-  margin-left: 15%;
+	text-align: right;
 }
 
 
@@ -76,6 +72,7 @@ section#main {
 	color: #fff;
 	padding: 20px 20px 20px 40px;
 	box-shadow: 0px 0px 30px -10px black;
+  margin-left: 15%;
 }
 
 section#services {
@@ -100,6 +97,7 @@ section#services {
 	width: 50%;
 	height: auto;
 	margin: 0 auto;
+	box-shadow: 0px 0px 30px -10px black;
 }
 
 .service-description {
@@ -120,8 +118,9 @@ section#portfolio {
 
 .project-item {
 	width: 50%;
+	min-width: 550px;
 	text-align: left;
-	background-color: #ccc;
+	background-color: #fff;
 	color: #000;
 	box-shadow: 0px 0px 30px -10px black;
 	margin: 20px;
@@ -130,16 +129,17 @@ section#portfolio {
 }
 
 .project-image {
-	width: 50%;
+	width: 35%;
+	margin: auto 0px auto 20px;
 }
 
 .project-info {
-	width: 50%;
-	padding: 25px
+	width: 65%;
+	padding: 25px;
 }
 
-.project-description {
-	margin-top: 25px;
+.project-quote {
+	margin-top: 10px;
 }
 
 section#contact {
@@ -155,12 +155,49 @@ section#contact {
 
 }
 
-input {
+.input-block {
+	display: flex;
+}
 
+.input-item-left {
+	display: block;
+	margin-right: 20px;
+}
+
+.input-item-right {
+	display: block;
+}
+
+input {
+	width: 100%;
+	background-color: #fff;
+	color: #2a60a0;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1rem;
+	border: 2px solid #8e4444;
 }
 
 textarea	{
+	width: 100%;
+	background-color: #fff;
+	color: #2a60a0;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1rem;
+	border: 2px solid #8e4444;
+}
 
+input.submit {
+	width: 100%;
+	background-color: #2a60a0;
+	color: #fff;
+	padding: 10px 5px;
+	margin: 10px 0px;
+	font-size: 1.2rem;
+	border: 2px solid #fff;
+	text-transform: uppercase;
+	font-weight: bold;
 }
 
 footer {
@@ -173,14 +210,15 @@ footer {
 }
 
 .footer-left {
-	width: 25%;
+	width: 30%;
 	padding: 25px;
 }
 
 .footer-right {
-	width: 75%;
+	width: 70%;
 	text-align: right;
-	padding: 25px;
+	padding: 25px 25px 25px 0px;
+	margin: auto;
 }
 
 .footer-bottom {
@@ -230,8 +268,6 @@ img.service-image {
 }
 
 img.thumbnail {
-	margin-: 0px;
-	border-radius: 10px;
 }
 
 .project-info h2 {
@@ -239,5 +275,23 @@ img.thumbnail {
 }
 
 .footer-left img {
-	width: 35%;
+	height: 100px;
+	width: auto;
+	float: left;
+}
+
+.footer-right a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.footer-right img {
+	width: 15px;
+	height: 15px;
+	margin: 0px 10px;
+	vertical-align: middle;
+}
+
+.footer-right p {
+	margin-top: 5px;
 }

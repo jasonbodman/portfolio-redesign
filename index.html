@@ -7,6 +7,7 @@
 		<meta charset="utf-8">
 
 		<!--Linked styles-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 		<link href="https://fonts.googleapis.com/css?family=Roboto|Zeyada" rel="stylesheet">
 
 		<!--Local styles-->
@@ -78,7 +79,7 @@
 							<img src="img/tools.png" class="service-image">
 						</div> <!--service-image-bg-->
 						<div class="service-description">
-							<h2>Website Redesign and Optimization</h2>
+							<h2>Redesign and Optimization</h2>
 							<p>If you feel that your current website needs a facelift or
 								you recently updated your business' branding or voice, I can
 								help to bring your vision to life while ensuring that	your
@@ -92,7 +93,7 @@
 							<img src="img/startup.png" class="service-image">
 						</div> <!--service-image-bg-->
 						<div class="service-description">
-							<h2>New Feature Installation</h2>
+							<h2>Feature Installation</h2>
 							<p>Whether your business is ready to finally launch that
 								industry blog or you want your products to be available online
 								through	an ecommerce platform, I can help your business take
@@ -107,57 +108,85 @@
 
 			<section id="portfolio" class="portfolio">
 				<h1 class="center">Portfolio</h1>
-				<p class="center">Description</p>
 				<div class="project-list">
 					<div class="project-item">
 						<div class="project-image">
-							<img class="thumbnail" src="img/tomgola_thumb.png">
+							<img class="thumbnail" src="img/golaLogo.png">
 						</div>
 						<div class="project-info">
-							<h2>Mr. All Around</h3>
-							<p><i>Website</i></p>
-							<p class="project-description">Blah Blah Blah</p>
-						</div>
-					</div>
+							<h3 class="robot">Mr. All Around</h3>
+							<p><a href="http://www.tomgolabook.com/">www.tomgolabook.com</a></p>
+							<p class="project-quote"><i>"I wanted a simple and easy website
+								for my upcoming book and Jason delivered. He is a great
+								communicator and was easy to work with in figuring out
+								logistics for how the website would run. I appreciated Jason
+								going above and beyond by providing a step by step process of
+								how to work the website moving forward. Highlight recommend his
+								work if you are looking for a website."</i></p>
+								<p class="right">-David Grzybowski</p>
+						</div> <!-- project-info -->
+					</div> <!-- project-item -->
 					<div class="project-item">
 						<div class="project-image">
-							<img class="thumbnail" src="img/acuvanture_thumb.png">
-						</div>
+							<img class="thumbnail" src="img/AcuVanture_logo.jpeg">
+						</div> <!-- project-image -->
 						<div class="project-info">
-							<h2>AcuVanture</h3>
-							<p><i>Website</i></p>
-							<p class="project-description">Blah Blah Blah</p>
-						</div>
-					</div>
-				</div>
+							<h3 class="robot">AcuVanture</h3>
+							<p><a href="http://www.acuvanture.com/">www.acuvanture.com</a></p>
+							<p class="project-quote"><i>Everything was done in a very
+								professional and timely manner. I was able to get responses
+								right away. Jason provided with amazing ideas that made the
+								website stand out more. I will most definitely be referring
+								people to Jason!</i></p>
+							<p class="right">-Van Dinh</p>
+						</div> <!-- project-info -->
+					</div> <!-- project-item -->
+				</div> <!-- project-list -->
+
 			</section>
 
 			<section class="contact" id="contact">
 		    <h2>Let's get started!</h2>
 		    <p class="robot">Using the form below, please share a few basic
-					details about your project. Once I receive your request, I'll be in
+					details about your project. Once I receive your message, I'll be in
 					touch as quickly as possible to ask any clarifying questions and
 					discuss potential next steps. (You can also just use the form below
 					to say hi if you'd like!)</p>
 		    <div class="contactform">
 		      <form method="post" class="form" action="contact_form.php">
 
-		        <label for="name">What is your name?</label>
-		        <br><input type="text" id="name" name="name"></br>
+						<div class="input-block">
+							<div class="input-item-left">
+				        <label for="name">What is your name?*</label>
+				        <br><input type="text" id="name" name="name"></br>
+							</div>
 
-						<br><label for="subject">hone:</label>
-		        <br><input type="text" id="subject" name="subject" placeholder="Message subject"></br>
+							<div class="input-item-right">
+								<label for="phone">What is the best phone number to reach you at?*</label>
+				        <br><input type="text" id="phone" name="phone"></br>
+							</div>
+						</div>
 
-		        <br><label for="email">Email:</label>
-		        <br><input type="text" id="email" name="email_address" placeholder="Your email"></br>
+						<div class="input-block">
+			        <div class="input-item-left">
+								<label for="email">Where should we email you?*</label>
+			        	<br><input type="text" id="email" name="email"></br>
+							</div>
 
-						<br><label for="website">Your Website:</label>
-						<br><input type="text" id="website" name="website" placeholder="What is the URL of your current website? (if applicable)"></br>
+							<div class="input-item-right">
+								<label for="website">What is the URL of your current website (if applicable)?</label>
+								<br><input type="text" id="website" name="website"></br>
+							</div>
+						</div>
 
-		        <br><label for="message">Brief Description of Project or Question:</label>
-		        <br><textarea id="message" name="message" placeholder="Please provide a brief description of your project and what you're hoping to accomplish?" style="height:200px;"></textarea></br>
+						<div class="input-item">
+							<br><label for="message">Please share a brief description of your project or your question:</label>
+			        <br><textarea id="message" name="message" style="height:200px;"></textarea></br>
+						</div>
 
-		        <br><input type="submit" value="Send!">
+		        <div class="input-item">
+							<br><input class="submit" type="submit" value="Send">
+						</div>
 		      </form>
 		    </div>
 		  </section>
@@ -171,14 +200,16 @@
 				</div> <!-- footer-left -->
 
 				<div class="footer-right">
-					<p>Jason Bodman
-						<br>hello@jasonbodman.com</br>
-						<br>
+					<h3 class="robot">Connect with me at:</h3>
+					<p><a href="mailto:hello@jasonbodman.com"><img src="img/mail.png"> hello@jasonbodman.com</a></p>
+					<p><a href="http://www.twitter.com/bodmand1"><img src="img/twitter.png"> @bodmand1</a></p>
+					<p><a href="http://www.github.com/jasonbodman/"><img src="img/github.png"> @jasonbodman</a></p>
 				</div> <!-- footer-right -->
 			</div> <!-- footer-top -->
 
 			<div class="footer-bottom center">
-				&copy; Jason Bodman, 2018. All rights reserved.
+				<p>&copy; Jason Bodman, 2018. All rights reserved.</p>
+				<p>All icons designed by Freepik from Flaticon.</p>
 			</div> <!-- footer-bottom -->
 
 		</footer>
