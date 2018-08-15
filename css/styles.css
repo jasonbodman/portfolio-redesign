@@ -32,6 +32,20 @@
 
 /* SECTION STYLES */
 
+.sidenav {
+  height: 100%; /* 100% Full-height */
+  width: 0px; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #ccc; /* Black*/
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 60px; /* Place content 60px from the top */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+	border-right: 3px solid #8e4444;
+}
+
 header {
 	background-color: #2a60a0;
 	z-index: 1;
@@ -212,18 +226,40 @@ h3 {
 	font-size: 1.5rem;
 }
 
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2a60a0;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #8e4444;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
 p.subtitle {
 	font-size: 1.4rem;
 	font-weight: lighter;
 }
 
-a.nav-link {
+span.nav-link {
 	text-decoration: none;
+	text-transform: uppercase;
 	color: #fff;
 	font-weight: bold;
 	font-size: 1.25rem;
 	text-align: center;
-	margin-top: 10px;
+	margin: auto;
 }
 
 .title button {
@@ -302,4 +338,11 @@ input.submit {
 
 .footer-right p {
 	margin-top: 5px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
