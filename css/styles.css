@@ -53,7 +53,8 @@ header {
 	width: 150px;
 	height: 50px;
 	position: fixed;
-	margin: 20px 20px 20px 80%;
+	right: 25px;
+	top: 25px;
 	border-radius: 25px;
 }
 
@@ -80,7 +81,7 @@ section#main {
 
 .title {
 	position: absolute;
-	top: 60%;
+	top: 35%;
 	width: 75%;
 	text-align: left;
 	background-color: #8e4444;
@@ -92,18 +93,23 @@ section#main {
 
 section#services {
 	background-color: #ccc;
-	padding: 50px;
+	padding: 50px 10px;
+	color: #000;
 }
 
 .service-list {
-	display: inline-flex;
+	display: flex;
+	flex-wrap: wrap;
 	margin: 0 auto;
-	padding: 50px;
+	padding: 0px;
 }
 
 .service-item {
-	width: 33%;
-	margin: 15px;
+	width: 100%;
+	min-width: 300px;
+	max-width: 500px;
+	margin: 15px 0px;
+	padding-top: 30px;
 }
 
 .service-image-bg {
@@ -121,7 +127,7 @@ section#services {
 
 section#portfolio {
 	background-color: #8e4444;
-	padding: 50px;
+	padding: 50px 10px;
 	margin: 0 auto;
 	color: #fff;
 }
@@ -129,28 +135,28 @@ section#portfolio {
 .project-list {
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .project-item {
-	width: 50%;
-	min-width: 550px;
+	width: 100%;
 	text-align: left;
 	background-color: #fff;
 	color: #000;
 	box-shadow: 0px 0px 30px -10px black;
 	margin: 20px;
-	display: flex;
+	display: block;
 	border-radius: 10px;
 }
 
 .project-image {
-	width: 35%;
-	margin: auto 0px auto 20px;
+	width: 50%;
+	margin: auto;
 }
 
 .project-info {
-	width: 65%;
-	padding: 25px;
+	width: 100%;
+	padding: 10px;
 }
 
 .project-quote {
@@ -159,7 +165,7 @@ section#portfolio {
 
 section#contact {
 	background-color: #ccc;
-	padding: 50px;
+	padding: 50px 10px;
 }
 
 .contactform {
@@ -167,7 +173,7 @@ section#contact {
 }
 
 .input-block {
-	display: flex;
+	display: block;
 }
 
 .input-item-left {
@@ -213,7 +219,7 @@ section {
 
 h1 {
 	font-family: Zeyada, Roboto, sans-serif;
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 
 h2 {
@@ -249,7 +255,7 @@ h3 {
 }
 
 p.subtitle {
-	font-size: 1.4rem;
+	font-size: 1rem;
 	font-weight: lighter;
 }
 
@@ -341,9 +347,80 @@ input.submit {
 	margin-top: 5px;
 }
 
-
 /* MEDIA QUERIES */
 @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+}
+
+@media screen and (min-width: 1280px) {
+	.title {
+		top: 60%;
+	}
+
+	section#services {
+		padding: 50px;
+	}
+
+	.service-list {
+		display: inline-flex;
+		flex-wrap: nowrap;
+	}
+
+	.service-item {
+		width: 33%;
+		margin: 15px;
+		padding-top: 0px;
+	}
+
+	.service-image-bg {
+		padding-top: 0px;
+	}
+
+	section#portfolio {
+		padding: 50px;
+	}
+
+	.project-list {
+		width: 100%;
+		display: inline-flex;
+		flex-wrap: nowrap;
+	}
+
+	.project-item {
+		width: 50%;
+		text-align: left;
+		background-color: #fff;
+		color: #000;
+		box-shadow: 0px 0px 30px -10px black;
+		margin: 20px;
+		display: flex;
+		border-radius: 10px;
+	}
+
+	.project-image {
+		width: 35%;
+		margin: auto 0px auto 20px;
+	}
+
+	.project-info {
+		width: 65%;
+		padding: 25px;
+	}
+
+	section#contact {
+		padding: 50px;
+	}
+
+	.input-block {
+		display: flex;
+	}
+
+	p.subtitle {
+		font-size: 1.4rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
 }
