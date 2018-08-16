@@ -290,7 +290,7 @@ img.service-image {
 
 img.thumbnail {
 	padding: 25px;
-	max-width: 400px;
+	max-width: 300px;
 	display: block;
 	margin: auto;
 }
@@ -421,7 +421,8 @@ input.submit {
 
 	.project-image {
 		width: 35%;
-		margin: auto 0px auto 20px;
+		margin: auto 0px 20px;
+
 	}
 
 	.project-info {
@@ -447,7 +448,7 @@ input.submit {
 	}
 
 	img.thumbnail {
-		padding: 0px;
+		padding: 25px;
 		margin: 0 auto;
 	}
 }

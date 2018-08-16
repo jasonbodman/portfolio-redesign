@@ -14,12 +14,44 @@
 		<link href="css/styles.css" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="img/logo-black.PNG">
 
+		<script>
+				/* Set the width of the side navigation to 250px */
+				function openNav() {
+				    document.getElementById("mySidenav").style.width = "180px";
+				}
+
+				/* Set the width of the side navigation to 0 */
+				function closeNav() {
+				    document.getElementById("mySidenav").style.width = "0";
+				}
+
+				function checkNav() {
+				    var x = document.getElementById("mySidenav");
+				    if (x.style.width === "0px") {
+				        x.style.width = " 180px";
+				    } else {
+				        x.style.width = "0px";
+				    }
+				}
+		</script>
+
 	</head>
 
 	<body>
-		<header>
+
+		<div id="mySidenav" class="sidenav">
+		  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		  <a href="#main" onclick="closeNav()">Home</a>
+		  <a href="#services" onclick="closeNav()">Services</a>
+		  <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+		  <a href="#contact" onclick="closeNav()">Contact</a>
+		</div>
+
+<!-- Use any element to open the sidenav -->
+
+		<header onclick="checkNav()">
 			<div class="nav-contact">
-				<a class="nav-link center">Contact</a>
+				<span class="nav-link center">&#9776; Menu</span>
 			</div>
 		</header>
 
