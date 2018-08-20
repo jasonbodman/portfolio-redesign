@@ -1,6 +1,6 @@
 /* GLOBAL STYLES */
 * {
-	font-family: Roboto, sans-serif;
+	font-family: Raleway, sans-serif;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -10,11 +10,15 @@
 
 /* STYLES */
 .robot {
-	font-family: Roboto, sans-serif;
+	font-family: Raleway, sans-serif;
 }
 
 .zeyada {
 	font-family: Zeyada, sans-serif;
+}
+
+.subtitle {
+	font-size: 1rem;
 }
 
 .center {
@@ -36,21 +40,21 @@
   height: 100%; /* 100% Full-height */
   width: 0px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
+  z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
   background-color: #2a60a0; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
-	border-right: 5px solid #fff;
+  border-right: none;
 }
 
 header {
 	background-color: #2a60a0;
 	z-index: 1;
 	display: inline-flex;
-	width: 150px;
+	width: 50px;
 	height: 50px;
 	position: fixed;
 	right: 25px;
@@ -76,7 +80,7 @@ header:hover {
 section#main {
 	background-image: url("../img/main2.jpg");
 	position: relative;
-	background-attachment: fixed;
+	background-attachment: inherit;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -86,8 +90,8 @@ section#main {
 
 .title {
 	position: absolute;
-	top: 35%;
-	width: 80%;
+	top: 60%;
+	width: 95%;
 	text-align: left;
 	background-color: #8e4444;
 	color: #fff;
@@ -221,17 +225,17 @@ section {
 }
 
 h1 {
-	font-family: Zeyada, Roboto, sans-serif;
-	font-size: 1.7rem;
+	font-family: Zeyada, Raleway, sans-serif;
+	font-size: 1.9rem;
 }
 
 h2 {
-	font-family: zeyada, sans-serif;
-	font-size: 1.7rem;
+	font-family: Raleway, sans-serif;
+	font-size: 1.4rem;
 }
 
 h3 {
-	font-family: Zeyada, sans-serif;
+	font-family: Raleway, sans-serif;
 	font-size: 1.3rem;
 }
 
@@ -256,19 +260,18 @@ h3 {
   margin-left: 50px;
 }
 
-p.subtitle {
-	font-size: 1rem;
-	font-weight: lighter;
-}
-
 span.nav-link {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #fff;
 	font-weight: bold;
-	font-size: 1.25rem;
+	font-size: .75rem;
 	text-align: center;
 	margin: auto;
+}
+
+span.nav-menu {
+    display: none;
 }
 
 .title button {
@@ -367,7 +370,28 @@ input.submit {
 	h3 {
 		font-size: 1.7rem;
 	}
+	
+	header {
+	    width: 150px;
+	    height: 50px;
+	}
+	
+	span.nav-link {
+	    font-size: 1.25rem;
+	}
+	
+	span.nav-menu {
+	    display: contents;
+	}
+	
+	.sidenav {
+	    border-right: 5px solid #fff;
+	}
 
+	section#main {
+	    background-attachment: fixed;
+	}
+	
 	.title {
 		margin-left: 0px;
 		width: 75%;
@@ -375,6 +399,10 @@ input.submit {
 }
 
 @media screen and (min-width: 1280px) {
+	h1 {
+		font-size: 3rem;
+	}
+	
 	.title {
 		top: 60%;
 	}
@@ -390,12 +418,14 @@ input.submit {
 
 	.service-item {
 		width: 33%;
-		margin: 15px;
-		padding-top: 0px;
 	}
 
 	.service-image-bg {
 		padding-top: 0px;
+	}
+	
+	.service-description {
+	    padding: 25px 15px 0px 15px;
 	}
 
 	section#portfolio {
@@ -409,12 +439,12 @@ input.submit {
 	}
 
 	.project-item {
-		width: 50%;
+		width: 48%;
 		text-align: left;
 		background-color: #fff;
 		color: #000;
 		box-shadow: 0px 0px 30px -10px black;
-		margin: 20px;
+		margin: 0 auto;
 		display: flex;
 		border-radius: 10px;
 	}
