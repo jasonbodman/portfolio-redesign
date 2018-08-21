@@ -60,6 +60,7 @@ header {
 	right: 25px;
 	top: 25px;
 	border-radius: 25px;
+	cursor: pointer;
 }
 
 header:hover {
@@ -186,10 +187,12 @@ section#contact {
 
 .input-item-left {
 	display: block;
+	margin-top: 20px;
 	margin-right: 20px;
 }
 
 .input-item-right {
+	margin-top: 20px;
 	display: block;
 }
 
@@ -322,16 +325,21 @@ textarea	{
 	border: 2px solid #8e4444;
 }
 
+.submitBtn {
+	display: flex;
+}
+
 input.submit {
-	width: 100%;
+	width: 75%;
 	background-color: #2a60a0;
 	color: #fff;
 	padding: 10px 5px;
-	margin: 10px 0px;
+	margin: 20px auto 0px;
 	font-size: 1.2rem;
 	border: 2px solid #fff;
 	text-transform: uppercase;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 .footer-left img {
@@ -356,6 +364,10 @@ input.submit {
 	margin-top: 5px;
 }
 
+.error {
+	color: red;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 500px) {
@@ -370,20 +382,20 @@ input.submit {
 	h3 {
 		font-size: 1.7rem;
 	}
-	
+
 	header {
 	    width: 150px;
 	    height: 50px;
 	}
-	
+
 	span.nav-link {
 	    font-size: 1.25rem;
 	}
-	
+
 	span.nav-menu {
 	    display: contents;
 	}
-	
+
 	.sidenav {
 	    border-right: 5px solid #fff;
 	}
@@ -391,7 +403,7 @@ input.submit {
 	section#main {
 	    background-attachment: fixed;
 	}
-	
+
 	.title {
 		margin-left: 0px;
 		width: 75%;
@@ -402,7 +414,7 @@ input.submit {
 	h1 {
 		font-size: 3rem;
 	}
-	
+
 	.title {
 		top: 60%;
 	}
@@ -423,7 +435,7 @@ input.submit {
 	.service-image-bg {
 		padding-top: 0px;
 	}
-	
+
 	.service-description {
 	    padding: 25px 15px 0px 15px;
 	}

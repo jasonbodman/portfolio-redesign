@@ -13,6 +13,11 @@
 		<link href="css/styles.css" rel="stylesheet">
 		<link rel="shortcut icon" type="image/png" href="img/logo-black.PNG">
 
+		<!--Scripts-->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/jquery.validate.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/jquery-validation@1.17.0/dist/additional-methods.js"></script>
+
 		<script>
 				/* Set the width of the side navigation to 250px */
 				function openNav() {
@@ -186,7 +191,7 @@
 					discuss potential next steps. (You can also just use the form below
 					to say hi if you'd like!)</p>
 		    <div class="contactform">
-		      <form method="post" class="form" action="contact_form.php">
+		      <form method="post" id="contactform" class="form" action="contact_form.php">
 
 						<div class="input-block">
 							<div class="input-item-left">
@@ -196,19 +201,19 @@
 
 							<div class="input-item-right">
 								<label for="phone">What is the best phone number to reach you at?*</label>
-				        <br><input type="text" id="phone" name="phone"></br>
+				        <br><input type="phoneUS" id="phone" name="phone"></br>
 							</div>
 						</div>
 
 						<div class="input-block">
 			        <div class="input-item-left">
 								<label for="email">Where should we email you?*</label>
-			        	<br><input type="text" id="email" name="email"></br>
+			        	<br><input type="email" id="email" name="email"></br>
 							</div>
 
 							<div class="input-item-right">
 								<label for="website">What is the URL of your current website (if applicable)?</label>
-								<br><input type="text" id="website" name="website"></br>
+								<br><input type="url" id="website" name="website"></br>
 							</div>
 						</div>
 
@@ -217,7 +222,7 @@
 			        <br><textarea id="message" name="message" style="height:200px;"></textarea></br>
 						</div>
 
-		        <div class="input-item">
+		        <div class="input-item submitBtn">
 							<br><input class="submit" type="submit" value="Send">
 						</div>
 		      </form>
@@ -246,6 +251,43 @@
 			</div> <!-- footer-bottom -->
 
 		</footer>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+
+				$("form").validate({
+					rules: {
+						name: "required",
+						phone: {
+							required: true,
+							phoneUS: true
+						},
+						email: {
+							required: true,
+							email: true,
+						},
+						url: {
+							url: true
+						}
+					},
+					messages: {
+						name: "Please enter your name",
+						phone: {
+							required: "Please enter a phone number",
+							phoneUS: "Please enter a valid phone number (XXX-XXX-XXXX)"
+						},
+						email: {
+							required: "Please enter your email address",
+							email: "Please enter a valid email address"
+						},
+						url: {
+							url: "Please enter a valid URL, beginning with http://www"
+						}
+					}
+				});
+			});
+		</script>
+
 
 	</body>
 
