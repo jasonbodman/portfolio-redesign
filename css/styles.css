@@ -196,6 +196,14 @@ section#contact {
 	display: block;
 }
 
+.input-item-center {
+	display: flex;
+}
+
+.input-g-recaptcha {
+	margin: auto;
+}
+
 footer {
 	background-color: #8e4444;
 	color: #fff;
@@ -323,6 +331,11 @@ textarea	{
 	margin: 10px 0px;
 	font-size: 1rem;
 	border: 2px solid #8e4444;
+}
+
+.g-recaptcha {
+	width: auto;
+	margin: 20px auto 0;
 }
 
 .submitBtn {
