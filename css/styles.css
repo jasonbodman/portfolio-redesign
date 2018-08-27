@@ -333,6 +333,10 @@ textarea	{
 	border: 2px solid #8e4444;
 }
 
+.recaptcha-wrap {
+    display: flex;    
+}
+
 .g-recaptcha {
 	width: auto;
 	margin: 20px auto 0;
