@@ -5,6 +5,8 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	--blue: #2a60a0;
+	--red: #8e4444;
 }
 
 * {
@@ -50,7 +52,7 @@
   z-index: 2; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #2a60a0; /* Blue*/
+  background-color: var(--blue); /* Blue*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -58,7 +60,7 @@
 }
 
 header {
-	background-color: #2a60a0;
+	background-color: var(--blue);
 	z-index: 1;
 	display: inline-flex;
 	width: 50px;
@@ -72,7 +74,7 @@ header {
 
 header:hover {
 	color: #fff;
-	background-color: #8e4444;
+	background-color: var(--red);
 }
 
 .nav-contact {
@@ -101,7 +103,7 @@ section#main {
 	top: 60%;
 	width: 95%;
 	text-align: left;
-	background-color: #8e4444;
+	background-color: var(--red);
 	color: #fff;
 	padding: 20px 20px 20px 40px;
 	box-shadow: 0px 0px 30px -10px black;
@@ -143,7 +145,7 @@ section#services {
 }
 
 section#portfolio {
-	background-color: #8e4444;
+	background-color: var(--red);
 	padding: 50px 25px;
 	margin: 0 auto;
 	color: #fff;
@@ -212,7 +214,7 @@ section#contact {
 }
 
 footer {
-	background-color: #8e4444;
+	background-color: var(--red);
 	color: #fff;
 	padding: 25px 25px;
 }
@@ -239,7 +241,7 @@ footer {
 
 /* ELEMENT STYLES */
 section {
-	border-bottom: 3px solid #8e4444;
+	border-bottom: 3px solid var(--red);
 }
 
 h1 {
@@ -267,7 +269,7 @@ h3 {
 }
 
 .sidenav a:hover {
-  background-color: #8e4444;
+  background-color: var(--red);
 }
 
 .sidenav .closebtn {
@@ -295,7 +297,7 @@ span.nav-menu {
 .title button {
 	width: 250px;
 	background-color: #fff;
-	color: #8e4444;
+	color: var(--red);
 	font-size: 1.25rem;
 	text-align: center;
 	margin-top: 10px;
@@ -323,21 +325,21 @@ img.thumbnail {
 input {
 	width: 100%;
 	background-color: #fff;
-	color: #2a60a0;
+	color: var(--blue);
 	padding: 10px 5px;
 	margin: 10px 0px;
 	font-size: 1rem;
-	border: 2px solid #8e4444;
+	border: 2px solid var(--red);
 }
 
 textarea	{
 	width: 100%;
 	background-color: #fff;
-	color: #2a60a0;
+	color: var(--blue);
 	padding: 10px 5px;
 	margin: 10px 0px;
 	font-size: 1rem;
-	border: 2px solid #8e4444;
+	border: 2px solid var(--red);
 }
 
 .recaptcha-wrap {
@@ -355,7 +357,7 @@ textarea	{
 
 input.submit {
 	width: 75%;
-	background-color: #2a60a0;
+	background-color: var(--blue);
 	color: #fff;
 	padding: 10px 5px;
 	margin: 20px auto 0px;
