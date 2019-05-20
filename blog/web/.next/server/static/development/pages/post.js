@@ -88,10 +88,33 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 5);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
+
+/***/ "./client.js":
+/*!*******************!*\
+  !*** ./client.js ***!
+  \*******************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _sanity_client__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @sanity/client */ "@sanity/client");
+/* harmony import */ var _sanity_client__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_sanity_client__WEBPACK_IMPORTED_MODULE_0__);
+
+/* harmony default export */ __webpack_exports__["default"] = (_sanity_client__WEBPACK_IMPORTED_MODULE_0___default()({
+  projectId: 'koppbhb6',
+  // you can find this in sanity.json
+  dataset: 'production',
+  // or the name you chose in step 1
+  useCdn: true // `false` if you want to ensure fresh data
+
+}));
+
+/***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
 /*!****************************************************************!*\
@@ -182,12 +205,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../client */ "./client.js");
+
 
 
 
 
 function Post(props) {
-  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("article", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, props.slug));
+  return react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("article", null, react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h1", null, props.title));
 }
 
 Post.getInitialProps =
@@ -202,11 +227,15 @@ function () {
         switch (_context.prev = _context.next) {
           case 0:
             slug = context.query.slug;
-            return _context.abrupt("return", {
+            _context.next = 3;
+            return _client__WEBPACK_IMPORTED_MODULE_3__["default"].fetch('*[_type == "post" && slug.current == $slug][0]', {
               slug: slug
             });
 
-          case 2:
+          case 3:
+            return _context.abrupt("return", _context.sent);
+
+          case 4:
           case "end":
             return _context.stop();
         }
@@ -223,7 +252,7 @@ function () {
 
 /***/ }),
 
-/***/ 5:
+/***/ 4:
 /*!*****************************!*\
   !*** multi ./pages/post.js ***!
   \*****************************/
@@ -232,6 +261,17 @@ function () {
 
 module.exports = __webpack_require__(/*! /Users/jason/Desktop/Coding/Portfolio/Portfolio/v2/blog/web/pages/post.js */"./pages/post.js");
 
+
+/***/ }),
+
+/***/ "@sanity/client":
+/*!*********************************!*\
+  !*** external "@sanity/client" ***!
+  \*********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("@sanity/client");
 
 /***/ }),
 
